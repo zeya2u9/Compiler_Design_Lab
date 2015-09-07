@@ -7,3 +7,4 @@ Lab Programs
   S-aS|A
   A-aA|$
 5.NFA to DFA : Take i.txt as input file.
+6.genuine Nfa to Dfa c program : take filee.txt as valid input format
