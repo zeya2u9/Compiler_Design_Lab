@@ -6,3 +6,4 @@ Lab Programs
 4.Regular Grammar: Input File will be as folows
   S-aS|A
   A-aA|$
+5.NFA to DFA : Take i.txt as input file.
