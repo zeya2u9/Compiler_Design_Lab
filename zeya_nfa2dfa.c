@@ -106,13 +106,15 @@ int main()
 	}
 	return 0;
 }
-int redund_check(int pp,int kk,int rrow_no,int coll)
+int redund_check(int pp,int kk,int rrow_no,int rr_no,int coll)
 {
+	int i;
 	for(i=0;i<pp;i++)
 	{
-		if(a[rrow_no][coll][i]==a[rrow_no][
+		if(a[rrow_no][coll][i]==a[rr_no][coll][kk])
+			return 1;
 	}
-
+	return 0;
 }
 void add_transition(int row_no)
 {
@@ -124,7 +126,7 @@ void add_transition(int row_no)
 		while(a[r_no][0][k]!='n') /////COPYING COLUMN NO 0
 		{
 			////Check if it is already present
-			if(redund_check(p,k,row_no,0)==0)
+			if(redund_check(p,k,row_no,r_no,0)==0)
 			{
 				a[row_no][0][p]=a[r_no][0][k];
 				p++;
@@ -136,7 +138,7 @@ void add_transition(int row_no)
 		k=0;
 		while(a[r_no][1][k]!='n') /////COPYING COLUMN NO 1
 		{
-			if(redund_check(q,k,row_no,1)==0)
+			if(redund_check(q,k,row_no,r_no,1)==0)
 			{
 				a[row_no][1][q]=a[r_no][1][k];
 				q++;
