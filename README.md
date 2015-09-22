@@ -9,3 +9,5 @@ Lab Programs
 5.NFA to DFA : Take i.txt as input file.
 6.genuine Nfa to Dfa c program : take filee.txt as valid input format
 7.Lexical_Analyzer-Takes a program as input and gives the list of delimiters, operators, identifiers, keywords, literals and constants. 
+8.Dfa-minimisation
+9.Nfa-acceptance
